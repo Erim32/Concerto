@@ -43,19 +43,30 @@ input[type=password], input[type=email],
     margin: 0 10px;
  }
 /**********************************************************/
+.search{
+    text-align: center;
+}
+
 .promo_home{ 
+    margin-right: 50px;  
 	width: 300px !important;
 }
 
-.groupe-promo{ 
+.groupe-promo, .meme-ligne{ 
     display: inline-flex;
 }
 
-.promo_titre{
+.promo_home .card-image{ 
+   position: relative;
+    max-height: 168px;
 }
 
-.promo_bouton{
+.promo_titre{
+    text-align: center;
+}
 
+.promo_buton{
+    text-align: center;
 }
 
 .promo_prix{ 
