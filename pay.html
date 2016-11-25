@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Concerto</title>
+    <meta charset="UTF-8">
+    <!--Import Google Icon Font et font awsome4-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./ress/css/font-awesome.min.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./ress/css/materialize.min.css"/>
+    <!-- mes css-->
+    <link href="./ress/css/style.css" rel="stylesheet">
+    <!--optimisé pour mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- js de prechargemment-->
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    
+  </head>
+  <body>
+    <div w3-include-html="./ress/composants/header.html"></div>
+    
+    <div class="container ">
+     <div class="content fond">
+       <h3 class="center">Paiement:</h2>
+       <form action="#" method="POST" accept-charset="utf-8">
+        <div class="row"> 
+          <div class="col s6">
+          <div class="content">
+              <h6>Nom:</h6>
+              <input type="text" class="validate">
+              <h6>Prénom:</h6>
+              <input type="text" class="validate">
+              <h6>Adresse email de facturation:</h6>
+              <input type="email" class="validate">
+              <h6>Numéro de téléphone:</h6>
+              <input type="tel" class="validate">
+              <h6>Adresse de facturation:</h6>
+              <input type="text" class="validate" placeholder="ex: 118 route de Narbonne">
+              <input type="text" class="validate" placeholder="ex: 31000 Toulouse">
+              <input type="text" class="validate" placeholder="ex: Occitanie, France">
+            </div>
+          </div> 
+          <div class="col s6">
+          <div class="content">
+              <h6>Numéro de carte:</h6>       
+              <input id="card" type="number" class="validate">
+              <h6>Date d'expiration:</h6>       
+              <input type="number" class="validate">
+              <h6>Code secret:</h6>       
+              <input type="number" class="validate">
+              
+              <div class="center">
+                <span>Autres moyens de paiement:</span>
+                <br>
+                <ul class="autrespaiement">
+                  <li><a href="#"  onclick="nonImplemente();return false;"><i class="fa fa-paypal" aria-hidden="true"></i></a></li>
+                  <li><a href="#"  onclick="nonImplemente();return false;"><i class="fa fa-cc-visa" aria-hidden="true"></i></a></li>
+                  <li><a href="#"  onclick="nonImplemente();return false;"><i class="fa fa-cc-mastercard" aria-hidden="true"></i></a></li>
+                  <li><a href="#"  onclick="nonImplemente();return false;"><i class="fa fa-btc" aria-hidden="true"></i></a></li>
+                  <li><a href="#"  onclick="nonImplemente();return false;"><i class="fa fa-cc-amex" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+
+              <div class="content recap_commande">
+                <h5>Nombre de place: </h5><h5 id="nbrplaces"></h5>
+                <h5>Prix total: </h5><h5 id="prix"></h5>
+              </div>
+        
+
+            </div>
+          </div>
+        </div>
+        <div class="center">
+          <p class="center">
+            <input type="checkbox" id="valid_condition" />
+            <label for="valid_condition">Je valide la véracité de mes informations.</label>
+          </p>
+         <button class="waves-effect waves-light btn" type="submit">Valider ma commande</button> 
+         </div>
+       </form>
+   
+      </div>
+      
+
+    </div>
+    <div w3-include-html="ress/composants/footer.html"></div>
+    
+    <!--Import jQuery avant materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="./ress/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./ress/js/jquery.cookie.js"></script>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script>
+      w3IncludeHTML();
+    </script>
+    <script type="text/javascript" src="ress/js/fonction.js"></script>
+  </body>
+
+</html>
