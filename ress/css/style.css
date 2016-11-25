@@ -26,6 +26,11 @@ input[type=password], input[type=email],
 .photoProfil{
     height: 150px;
 }
+.old{
+    background-color: rgba(0, 0, 0, 0.51) !important;
+    z-index: 10000;
+}
+
 /***********************PAIMENT*********************************/
 .autrespaiement{
      display: inline-flex;    

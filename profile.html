@@ -1,66 +1,160 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Concerto</title>
-    <meta charset="UTF-8">
-    <!--Import Google Icon Font et font awsome4-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="./ress/css/font-awesome.min.css">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="./ress/css/materialize.min.css"/>
-    <!-- mes css-->
-    <link href="./ress/css/style.css" rel="stylesheet">
-    <!--optimisé pour mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!-- js de prechargemment-->
-    <link rel="icon" type="image/png" href="favicon.ico" />
-    
-  </head>
-  <body>
-    <div w3-include-html="./ress/composants/header.html"></div>
-    
-    <div class="container ">
-      <div class="content fond">
-        <h3 class="center">Vontre espace client:</h3>
+    <head>
+        <title>Concerto</title>
+        <meta charset="UTF-8">
+        <!--Import Google Icon Font et font awsome4-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="./ress/css/font-awesome.min.css">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="./ress/css/materialize.min.css"/>
+        <!-- mes css-->
+        <link href="./ress/css/style.css" rel="stylesheet">
+        <!--optimisé pour mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- js de prechargemment-->
+        <link rel="icon" type="image/png" href="favicon.ico" />
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.2.0/jquery.rateyo.min.css">
+
         
-        <div class="row">
-          <div class="col s6">
-            <div class="content center" style="padding-top: 0;">
-              <img src="./ress/img/profil/default.jpg" class="photoProfil" alt="photo de profil">
-              <br>
-              <a href="#"  onclick="nonImplemente();return false;">Modifier mon profil.</a>
-            </div>
-          </div>
-          <div class="col s6">
-            <div class="content" style="padding-top: 0;">
-              <span class="profil_entete">Nom:</span><p id="nom"></p>
-              <span class="profil_entete">Prénom:</span><p id="prenom"></p>
-              <span class="profil_entete">Email:</span><p id="mail"></p>
-              <span class="profil_entete">Adresse de facturation:</span><p id="adresse"></p>
-            </div>
-          </div>
-        </div>
+    </head>
+    <body>
+        <div w3-include-html="./ress/composants/header.html"></div>
         
-        <h4 class="center">Mes réservations à venir:</h4>
-        <div class="reservation">
-          
+        <div class="container ">
+            <div class="content fond">
+                <h3 class="center">Vontre espace client:</h3>
+                
+                <div class="row">
+                    <div class="col s6">
+                        <div class="content center" style="padding-top: 0;">
+                            <img src="./ress/img/profil/default.jpg" class="photoProfil" alt="photo de profil">
+                            <br>
+                            <a href="#"  onclick="nonImplemente();return false;">Modifier mon profil.</a>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <div class="content" style="padding-top: 0;">
+                            <span class="profil_entete">Nom:</span><p id="nom"></p>
+                            <span class="profil_entete">Prénom:</span><p id="prenom"></p>
+                            <span class="profil_entete">Email:</span><p id="mail"></p>
+                            <span class="profil_entete">Adresse de facturation:</span><p id="adresse"></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h4 class="center">Mes réservations à venir:</h4>
+                <div class="reservation">
+                    <!--une reservation-->
+                    <div class="result_research">
+                        <div class="row">
+                            <div class="col s2"><img src="./ress/img/affiches/metallica.jpg" alt="affiche d'un concert de musique"></div>
+                            <div class="col s3">
+                                <span class="reservation_headline">NOM ARTISTE</span>
+                                <p>Lieu: </p>
+                                <p>Adresse: </p>
+                            </div>
+                            <div class="col s3">
+                                <span class="reservation_headline">Date: <span class="date">01/01</span></span><br>
+                                <span class="reservation_headline">Salle: <span class="salle">2</span></span><br>
+                                <span class="reservation_headline">Nombre de places: <span class="nbrplace">2</span></span>
+                            </div>
+                            <div class="col s3">
+                                <span class="reservation_headline">Heure: <span class="heure">20H05</span></span><br>
+                                <span class="reservation_headline">Code: <span class="code">X4AZ4</span></span><br>
+                                <a class="waves-effect waves-light btn btn-acheter" href="#" onclick="print();">Imprimer</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--une reservation-->
+                    <div class="result_research">
+                        <div class="row">
+                            <div class="col s2"><img src="./ress/img/affiches/metallica.jpg" alt="affiche d'un concert de musique"></div>
+                            <div class="col s3">
+                                <span class="reservation_headline">NOM ARTISTE</span>
+                                <p>Lieu: </p>
+                                <p>Adresse: </p>
+                            </div>
+                            <div class="col s3">
+                                <span class="reservation_headline">Date: <span class="date">01/01</span></span><br>
+                                <span class="reservation_headline">Salle: <span class="salle">2</span></span><br>
+                                <span class="reservation_headline">Nombre de places: <span class="nbrplace">2</span></span>
+                            </div>
+                            <div class="col s3">
+                                <span class="reservation_headline">Heure: <span class="heure">20H05</span></span><br>
+                                <span class="reservation_headline">Code: <span class="code">X4AZ4</span></span><br>
+                                <a class="waves-effect waves-light btn btn-acheter" href="#" onclick="print();">Imprimer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="center">Historique des réservations:</h4>
+                <div class="reservation">
+                    <!--une reservation-->
+                    <div class="result_research old">
+                        <div class="row">
+                            <div class="col s2"><img src="./ress/img/affiches/metallica.jpg" alt="affiche d'un concert de musique"></div>
+                            <div class="col s3">
+                                <span class="reservation_headline">NOM ARTISTE</span>
+                                <p>Lieu: </p>
+                                <p>Adresse: </p>
+                            </div>
+                            <div class="col s3">
+                                <span class="reservation_headline">Date: <span class="date">01/01</span></span><br>
+                                <span class="reservation_headline">Salle: <span class="salle">2</span></span><br>
+                                <span class="reservation_headline">Nombre de places: <span class="nbrplace">2</span></span>
+                            </div>
+                            <div class="col s3">
+                                <br>
+                                <div id="rate"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--une reservation-->
+                    <div class="result_research old">
+                        <div class="row">
+                            <div class="col s2"><img src="./ress/img/affiches/metallica.jpg" alt="affiche d'un concert de musique"></div>
+                            <div class="col s3">
+                                <span class="reservation_headline">NOM ARTISTE</span>
+                                <p>Lieu: </p>
+                                <p>Adresse: </p>
+                            </div>
+                            <div class="col s3">
+                                <span class="reservation_headline">Date: <span class="date">01/01</span></span><br>
+                                <span class="reservation_headline">Salle: <span class="salle">2</span></span><br>
+                                <span class="reservation_headline">Nombre de places: <span class="nbrplace">2</span></span>
+                            </div>
+                            <div class="col s3">
+                                <br>
+                                <div class="meme_ligne">
+                                  <i class="fa fa-star " aria-hidden="true"></i>
+                                  <i class="fa fa-star " aria-hidden="true"></i>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <h4 class="center">Historique des réservations:</h4>
-        <div class="reservation old">
-          
-        </div>
-      </div>
-    </div>
-    <div w3-include-html="ress/composants/footer.html"></div>
-    
-    <!--Import jQuery avant materialize.js-->
-    <script type="text/javascript" src="./ress/js/jquery.cookie.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="./ress/js/materialize.min.js"></script>
-    <script src="http://www.w3schools.com/lib/w3data.js"></script>
-    <script>
-    w3IncludeHTML();
-    </script>
-    <script type="text/javascript" src="ress/js/fonction.js"></script>
-  </body>
+        <div w3-include-html="ress/composants/footer.html"></div>
+        
+        <!--Import jQuery avant materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="./ress/js/jquery.cookie.js"></script>
+        <script type="text/javascript" src="./ress/js/materialize.min.js"></script>
+        <script src="http://www.w3schools.com/lib/w3data.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.2.0/jquery.rateyo.min.js"></script>
+        <script>
+        w3IncludeHTML();
+
+          $("#rate").rateYo({
+            rating: 3.6
+          });
+        </script>
+        <script type="text/javascript" src="ress/js/fonction.js"></script>
+    </body>
 </html>
