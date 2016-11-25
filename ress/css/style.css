@@ -42,6 +42,9 @@ input[type=password], input[type=email],
 	width: 300px !important;
 }
 
+.groupe-promo{ 
+    display: inline-flex;
+}
 
 .promo_titre{
 }
@@ -61,13 +64,13 @@ input[type=password], input[type=email],
 
 .prix{color: #4CAF50;}
 .overlay {
-    position: fixed;
+    position: fixed; 
     top: 10px;
     left: 225px;
     text-align: center;
 
     background-color: #aaA9F4;
-    z-index: 10000;
+    z-index: 10000; 
 }
 /*****************Result research******************/
 .result_research{
