@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Concerto</title>
+    <meta charset="UTF-8">
+    <!--Import Google Icon font et font awsome4-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./ress/css/font-awesome.min.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./ress/css/materialize.min.css"/>
+    <!-- mes css-->
+    <link href="./ress/css/style.css" rel="stylesheet">
+    <!--optimisé pour mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- js de prechargemment-->
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    
+  </head>
+  <body>
+    <div w3-include-html="./ress/composants/header.html"></div>
+    
+    <div class="container ">
+     <div class="content">
+	  <div class="content fond bravo center">
+			<h5> BRAVO </h5>
+			<a>Votre réservation est faites, vous allez recevoir vos billets et  les détails par mail dans quelques minutes </a>
+			
+			<h5>OU</h5>
+			<a>Voir toutes mes réservations depuis mon espace client.</a>
+			<button type="sumit" class="waves-effect waves-light btn" onclick="connexion();" id="bouton_connexion">Aller sur espace client</button> 
+		
+		</div>
+      </div>
+      
+
+    </div>
+    <div w3-include-html="ress/composants/footer.html"></div>
+    
+    <!--Import jQuery avant materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="./ress/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./ress/js/jquery.cookie.js"></script>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script>
+      w3IncludeHTML();
+    </script>
+    <script type="text/javascript" src="ress/js/fonction.js"></script>
+  </body>
+
+</html>
