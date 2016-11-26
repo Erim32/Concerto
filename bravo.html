@@ -24,10 +24,15 @@
         <div class="content fond bravo center">
           <h5> BRAVO </h5>
           <a>Votre réservation est faites, vous allez recevoir vos billets et  les détails par mail dans quelques minutes </a>
+          <h6>Autres possiblités:</h6>
+
           
-          <h5>OU</h5>
-          <a>Voir toutes mes réservations depuis mon espace client.</a><br>
-          <button type="sumit" class="waves-effect waves-light btn" onclick="connexion();" id="bouton_connexion">Aller sur espace client</button>
+          <div class="meme-ligne">
+          <a class="waves-effect waves-light btn" onclick="print();" style="margin-right: 20px;">Imprimer</a>
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=ABC13£" alt="qrcode" style="margin-right: 20px;">
+          <p style="margin-top: 0; margin-right: 20px;"><b>Votre code: </b><span class="code">ABC13£</span> </p>  
+          </div>
+          
           
         </div>
       </div>
