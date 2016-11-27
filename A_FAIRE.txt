@@ -1,0 +1,7 @@
+- css des filtres de recherche sur la page principale
+- toutes les intéractions
+- demander si dispose d'un compte
+- auto complete formulaire si connecte 
+- CSS
+- LE MENU DE RECHERCHE POUR LES PAGES DE RECHERCHE ET RECHERCHE_DETAIL
+- Contenu fictif

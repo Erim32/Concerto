@@ -9,6 +9,23 @@ $(document).ready(function(){
 
 navbar();
 
+    $("#dp").datepicker({
+        onSelect: function(dateText, inst) {
+            alert(dateText);
+        },
+        beforeShow: function (event, ui) {
+            var $link = $("#datep");
+            ui.dpDiv.offset({
+                top: $link.offset().top + 10,
+                left: $link.offset().left + 10
+            });
+        }
+    });
+
+    $("#datep").click(function() {
+        $("#dp").datepicker("show");
+    });
+
 });
 
 function connexion(){
