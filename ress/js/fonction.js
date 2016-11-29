@@ -1,32 +1,11 @@
-
-$(document).ready(function(){
-  $('.button-collapse').sideNav({
+function sideN(){
+    $('.button-collapse').sideNav({
       menuWidth: 300, // Default is 240
       edge: 'left', // Choose the horizontal origin
       closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
     }
   );
-
-navbar();
-
-    $("#dp").datepicker({
-        onSelect: function(dateText, inst) {
-            alert(dateText);
-        },
-        beforeShow: function (event, ui) {
-            var $link = $("#datep");
-            ui.dpDiv.offset({
-                top: $link.offset().top + 10,
-                left: $link.offset().left + 10
-            });
-        }
-    });
-
-    $("#datep").click(function() {
-        $("#dp").datepicker("show");
-    });
-
-});
+}
 
 function connexion(){
   $.cookie("connexion", "1");
@@ -45,6 +24,23 @@ function deconnexion(){
     window.location.replace("./index.html");
   
 }
+
+function complete(){
+ if(document.cookie.indexOf("1") >= 0) { 
+  document.getElementById('nom').value        = "Bravo";
+  document.getElementById("prenom").value     = "Johnny";
+  document.getElementById("tel").value        = "05040202";
+  document.getElementById("email").value      = "toto@tata.fr";
+  document.getElementById("location1").value  = "Johnny Bravo";
+  document.getElementById("location2").value  = "Johnny Bravo";
+  document.getElementById("location3").value  = "Johnny Bravo";
+
+  document.getElementById("card").value = "111555321";
+  document.getElementById("dateexp").value = "1012";
+  document.getElementById("code").value = "5555";
+  }
+}
+
 
 function navbar(){
   //utiliasteur connecté

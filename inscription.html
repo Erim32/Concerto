@@ -36,7 +36,7 @@
             <input type="checkbox" id="valid_condition" />
             <label for="valid_condition">J'approuve les <a href="#"  onclick="nonImplemente();return false;">conditions d'utilisation</a>.</label>
           </p>
-          <a class="waves-effect waves-light btn" id="valider_inscription" href="./index.html">Valider</a>
+          <a class="waves-effect waves-light btn" id="valider_inscription" onclick="inscription();">Valider</a>
          </div>
        </form>
    
@@ -55,6 +55,12 @@
       w3IncludeHTML();
     </script>
     <script type="text/javascript" src="ress/js/fonction.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        sideN();
+        navbar(); 
+      });
+    </script>
   </body>
 
 </html>

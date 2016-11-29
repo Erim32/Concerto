@@ -1,8 +1,9 @@
-.fond{background-color: #ff5722 ;}
-nav{background-color: #ff5722 ;}
+.fond{background-color: #0a51ab;}
+nav{background-color: #ff5722;}
 
 .burger{font-size: 2.5em;}
 /********************Inscription************************************/
+.search_item{margin-right: 50px;}
 
 .content{
     border-radius: 2%;

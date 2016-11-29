@@ -27,17 +27,17 @@
           <div class="col s6">
           <div class="content">
               <h6>Nom:</h6>
-              <input type="text" class="validate">
+              <input type="text" class="validate" id="nom">
               <h6>Prénom:</h6>
-              <input type="text" class="validate">
+              <input type="text" class="validate" id="prenom">
               <h6>Adresse email de facturation:</h6>
-              <input type="email" class="validate">
+              <input type="email" class="validate" id="email">
               <h6>Numéro de téléphone:</h6>
-              <input type="tel" class="validate">
+              <input type="tel" class="validate" id="tel">
               <h6>Adresse de facturation:</h6>
-              <input type="text" class="validate" placeholder="ex: 118 route de Narbonne">
-              <input type="text" class="validate" placeholder="ex: 31000 Toulouse">
-              <input type="text" class="validate" placeholder="ex: Occitanie, France">
+              <input type="text" class="validate" placeholder="ex: 118 route de Narbonne" id="location1">
+              <input type="text" class="validate" placeholder="ex: 31000 Toulouse" id="location2">
+              <input type="text" class="validate" placeholder="ex: Occitanie, France" id="location3">
             </div>
           </div> 
           <div class="col s6">
@@ -45,9 +45,9 @@
               <h6>Numéro de carte:</h6>       
               <input id="card" type="number" class="validate">
               <h6>Date d'expiration:</h6>       
-              <input type="number" class="validate">
+              <input type="number" class="validate" id="dateexp">
               <h6>Code secret:</h6>       
-              <input type="number" class="validate">
+              <input type="number" class="validate" id="code">
               
               <div class="center">
                 <span>Autres moyens de paiement:</span>
@@ -62,8 +62,8 @@
               </div>
 
               <div class="content recap_commande">
-                <h5>Nombre de place: </h5><h5 id="nbrplaces"></h5>
-                <h5>Prix total: </h5><h5 id="prix"></h5>
+                <h5>Nombre de place: <span id="nbrplaces">2</span></h5>
+                <h5>Prix total: <span id="prix">75€</span></h5>
               </div>
         
 
@@ -94,6 +94,13 @@
       w3IncludeHTML();
     </script>
     <script type="text/javascript" src="ress/js/fonction.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        sideN();
+        navbar(); 
+        complete();
+      });
+    </script>
   </body>
 
 </html>
