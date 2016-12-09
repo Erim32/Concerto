@@ -121,6 +121,10 @@ input[type=password], input[type=email],
     line-height: 1;
 }
 
+.centrer_champs{
+    margin-left: 18% !important;
+    margin-right: auto !important;
+}
 /*************FOOTER******************************/
 .footer{
 	position: static;

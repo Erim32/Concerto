@@ -1,5 +1,4 @@
-- toutes les intéractions
-- demander si dispose d'un compte
-- CSS
-- LE MENU DE RECHERCHE POUR LES PAGES DE RECHERCHE ET RECHERCHE_DETAIL
-- Contenu fictif
+- toutes les intéractions -Remi
+- demander si dispose d'un compte -Bence
+- CSS - mathieu
+- Contenu fictif - THOMAS
