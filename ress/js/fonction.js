@@ -49,13 +49,13 @@ function complete(){
   document.getElementById("prenom").value     = "Johnny";
   document.getElementById("tel").value        = "05040202";
   document.getElementById("email").value      = "toto@tata.fr";
-  document.getElementById("location1").value  = "118 Route de Narbonne";
-  document.getElementById("location2").value  = "31062 Toulouse";
-  document.getElementById("location3").value  = "";
+  document.getElementById("location1").value  = "Johnny Bravo";
+  document.getElementById("location2").value  = "Johnny Bravo";
+  document.getElementById("location3").value  = "Johnny Bravo";
 
-  document.getElementById("card").value = "1115553216578530";
+  document.getElementById("card").value = "111555321";
   document.getElementById("dateexp").value = "1012";
-  document.getElementById("code").value = "555";
+  document.getElementById("code").value = "5555";
   }
 }
 
