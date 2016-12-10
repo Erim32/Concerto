@@ -1,5 +1,5 @@
 .fond{background-color: #0a51ab;}
-nav{background-color: #ff5722;}
+nav{background-color: #f57c00;}
 
 .burger{font-size: 2.5em;}
 /********************Inscription************************************/
@@ -82,7 +82,7 @@ input[type=password], input[type=email],
     transform:         rotate(45deg);
 }
 
-.prix{color: #4CAF50;}
+.prix{color: #FF0000;}
 .overlay {
     position: fixed; 
     top: 10px;
