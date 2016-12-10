@@ -1,422 +1,594 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Concerto</title>
     <meta charset="UTF-8">
     <!--Import Google Icon font et font awsome4-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./ress/css/font-awesome.min.css">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="./ress/css/materialize.min.css"/>
+    <link type="text/css" rel="stylesheet" href="./ress/css/materialize.min.css" />
     <!--jquery mobile-->
     <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
     <link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/simpledialog/latest/jquery.mobile.simpledialog.min.css" />
     <!-- mes css-->
     <link href="./ress/css/style.css" rel="stylesheet">
     <!--optimisé pour mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- js de prechargemment-->
     <link rel="icon" type="image/png" href="favicon.ico" />
-    
-  </head>
-  <body>
+
+</head>
+
+<body>
     <div w3-include-html="./ress/composants/header.html"></div>
     <div class="container ">
-      <div class="content fond">
-         <div w3-include-html="./ress/composants/filter_search.html"></div>
-        <div class="result">
-	       <div class="item_result">
-            <div class="result_research">
-              <div class="row">
-                <div class="col s2"><img src="./ress/img/affiches/JCash.jpg" alt="affiche d'un concert de musique"></div>
-                <div class="col s3">
-                  <span class="result_research_headline">Johnny Cash</span>
-                  <p>Lieu: Condom</p>
-                  <p>Adresse: St Pierre de Montesquieu</p>
-                </div>
-                <div class="col s1">
-                  <span class="result_research_headline">Date:</span>
-                  <p>25/11/2015</p>
-                </div>
-                <div class="col s1">
-                  <span class="result_research_headline">Heure:</span>
-                  <p>15:45</p>
-                </div>
-                <div class="col s3">
-                  <span class="result_research_headline">Avis:</span>
-                  <div class="meme_ligne">
-                    <i class="fa fa-star " aria-hidden="true"></i>
-                    <i class="fa fa-star " aria-hidden="true"></i>
-                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                  </div>
-                </div>
-                <div class="col s2">
-                  <span class="result_research_headline">Prix:</span>
-                  <br>
-                  <span class="prix">35€</span>
-                  <br>
-                  <a class="waves-effect waves-light btn btn-acheter" href="./search_detail.html">Acheter</a>
-                </div>
-              </div>
-            </div>
-          </div><!--Fin div concert-->
-          <div class="item_result">
-            <div class="result_research">
-              <div class="row">
-                <div class="col s2"><img src="./ress/img/affiches/jul.jpg" alt="affiche d'un concert de musique"></div>
-                <div class="col s3">
-                  <span class="result_research_headline">Jul</span>
-                  <p>Lieu: Paris Bercy</p>
-                  <p>Adresse: 8 Bouleverd de Bercy</p>
-                </div>
-                <div class="col s1">
-                  <span class="result_research_headline">Date:</span>
-                  <p>06/06/2017</p>
-                </div>
-                <div class="col s1">
-                  <span class="result_research_headline">Heure:</span>
-                  <p>20:30</p>
-                </div>
-                <div class="col s3">
-                  <span class="result_research_headline">Avis:</span>
-                  <div class="meme_ligne">
-                    <i class="fa fa-star-half-o " aria-hidden="true"></i>
-                    <i class="fa fa-star-o " aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i> 
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                  </div>
-                </div>
-                <div class="col s2">
-                  <span class="result_research_headline">Prix:</span>
-                  <br>
-                  <span class="prix">01€</span>
-                  <br>
-                  <a class="waves-effect waves-light btn btn-acheter" href="./search_detail.html">Acheter</a>
-                </div>
-              </div>
-            </div>
-          </div><!--Fin div concert-->
-          <div class="item_result">
-            <div class="result_research">
-              <div class="row">
-                <div class="col s2"><img src="./ress/img/affiches/Kendgi.jpg" alt="affiche d'un concert de musique"></div>
-                <div class="col s3">
-                  <span class="result_research_headline">Kendgi Girac</span>
-                  <p>Lieu: Paris Bercy</p>
-                  <p>Adresse: 8 Boulevard de Bercy</p>
-                </div>
-                <div class="col s1">
-                  <span class="result_research_headline">Date:</span>
-                  <p>12/06/2017</p>
-                </div>
-                <div class="col s1">
-                  <span class="result_research_headline">Heure:</span>
-                  <p>11:50</p>
-                </div>
-                <div class="col s3">
-                  <span class="result_research_headline">Avis:</span>
-                  <div class="meme_ligne">
-                    <i class="fa fa-star-o " aria-hidden="true"></i>
-                    <i class="fa fa-star-o " aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                  </div>
-                </div>
-                <div class="col s2">
-                  <span class="result_research_headline">Prix:</span>
-                  <br>
-                  <span class="prix">0.05€</span>
-                  <br>
-                  <a class="waves-effect waves-light btn btn-acheter" href="./search_detail.html">Acheter</a>
-                </div>
-              </div>
-            </div>
-          </div><!--Fin div concert-->
-          <div class="item_result">
-            <div class="result_research">
-              <div class="row">
-                <div class="col s2"><img src="./ress/img/affiches/linkinPark.jpg" alt="affiche d'un concert de musique"></div>
-                <div class="col s3">
-                  <span class="result_research_headline">Linkin Park</span>
-                  <p>Lieu: Lyon - Zenith</p>
-                  <p>Adresse: 25 rue des Fossés de Trion</p>
-                </div>
-                <div class="col s1">
-                  <span class="result_research_headline">Date:</span>
-                  <p>31/03/2017</p>
-                </div>
-                <div class="col s1">
-                  <span class="result_research_headline">Heure:</span>
-                  <p>19:30</p>
-                </div>
-                <div class="col s3">
-                  <span class="result_research_headline">Avis:</span>
-                  <div class="meme_ligne">
-                    <i class="fa fa-star " aria-hidden="true"></i>
-                    <i class="fa fa-star " aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                  </div>
-                </div>
-                <div class="col s2">
-                  <span class="result_research_headline">Prix:</span>
-                  <br>
-                  <span class="prix">30€</span>
-                  <br>
-                  <a class="waves-effect waves-light btn btn-acheter" href="./search_detail.html">Acheter</a>
-                </div>
-              </div>
-            </div>
-          </div><!--Fin div concert-->
-          <div class="item_result">
-            <div class="result_research">
-              <div class="row">
-                <div class="col s2"><img src="./ress/img/affiches/gims.jpg" alt="affiche d'un concert de musique"></div>
-                <div class="col s3">
-                  <span class="result_research_headline">Maitre Gim's</span>
-                  <p>Lieu: Marseille - Le Moulin</p>
-                  <p>Adresse: 47 Boulevars Perrin</p>
-                </div>
-                <div class="col s1">
-                  <span class="result_research_headline">Date:</span>
-                  <p>12/05/2017</p>
-                </div>
-                <div class="col s1">
-                  <span class="result_research_headline">Heure:</span>
-                  <p>01.23</p>
-                </div>
-                <div class="col s3">
-                  <span class="result_research_headline">Avis:</span>
-                  <div class="meme_ligne">
-                    <i class="fa fa-star-half-io " aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                  </div>
-                </div>
-                <div class="col s2">
-                  <span class="result_research_headline">Prix:</span>
-                  <br>
-                  <span class="prix">15€</span>
-                  <br>
-                  <a class="waves-effect waves-light btn btn-acheter" href="./search_detail.html">Acheter</a>
-                </div>
-              </div>
-            </div>
-          </div> <!--Fin div concert-->
-          <div class="item_result">
-            <div class="result_research">
-              <div class="row">
-                <div class="col s2"><img src="./ress/img/affiches/gims.jpg" alt="affiche d'un concert de musique"></div>
-                <div class="col s3">
-                  <span class="result_research_headline">Maitre Gim's</span>
-                  <p>Lieu: Marseille - Le Moulin</p>
-                  <p>Adresse: 47 Boulevars Perrin</p>
-                </div>
-                <div class="col s1">
-                  <span class="result_research_headline">Date:</span>
-                  <p>14/05/2017</p>
-                </div>
-                <div class="col s1">
-                  <span class="result_research_headline">Heure:</span>
-                  <p>01:52</p>
-                </div>
-                <div class="col s3">
-                  <span class="result_research_headline">Avis:</span>
-                  <div class="meme_ligne">
-                    <i class="fa fa-star-half-o " aria-hidden="true"></i>
-                    <i class="fa fa-star-o " aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                  </div>
-                </div>
-                <div class="col s2">
-                  <span class="result_research_headline">Prix:</span>
-                  <br>
-                  <span class="prix">15€</span>
-                  <br>
-                  <a class="waves-effect waves-light btn btn-acheter" href="./search_detail.html">Acheter</a>
-                </div>
-              </div>
-            </div>
-          </div><!--Fin div concert-->
-          
+        <div class="content fond">
+        <!--DEBUT FILTRES-->
+            <!--debut modals-->
+                        <!-- Modal Structure -->
+                        <div id="modal_genre" class="modal">
+                            <div class="modal-content center">
+                                <h4>Genre de musique: </h4>
+                                <div class="input-field col s12">
+                                    <select multiple>
+                                        <option value="" disabled selected>Choisissez un genre</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                    </select>
+                                    <label>Genre:</label>
+                                </div>
+                                </br>
+                                <a class="waves-effect waves-light btn btn-acheter" href="#!" onclick="$('#modal_genre').modal('close');">Valider</a>
+                            </div>
+                        </div>
+                         <!-- Modal Structure -->
+                        <div id="modal_ville" class="modal">
+                            <div class="modal-content center">
+                                <h4>Saisissez une ville: </h4>
+                                 <div class="row">
+                                    <div class="col s12">
+                                      <div class="row">
+                                        <div class="input-field col s12">
+                                          <i class="material-icons prefix">location_on</i>
+                                          <input type="text" id="autocomplete-input_ville" class="autocomplete">
+                                          <label for="autocomplete-input">Ville</label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </br>
+                                <a class="waves-effect waves-light btn btn-acheter" href="#!" onclick="$('#modal_ville').modal('close');">Valider</a>
+                            </div>
+                        </div>
 
-         <div class="item_result">
-            <div class="result_research">
-              <div class="row">
-                <div class="col s2"><img src="./ress/img/affiches/metallica.jpg" alt="affiche d'un concert de musique"></div>
-                <div class="col s3">
-                  <span class="result_research_headline">Metalicca</span>
-                  <p>Lieu: Paris Bercy</p>
-                  <p>Adresse: 8 Boulevard de Bercy</p>
+
+                         <!-- Modal Structure -->
+                        <div id="modal_salle" class="modal">
+                            <div class="modal-content center">
+                                <h4>Saisissez une salle: </h4>
+                                 <div class="row">
+                                    <div class="col s12">
+                                      <div class="row">
+                                        <div class="input-field col s12">
+                                          <i class="material-icons prefix">business</i>
+                                          <input type="text" id="autocomplete-input_salle" class="autocomplete">
+                                          <label for="autocomplete-input">modal_salle</label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </br>
+                                <a class="waves-effect waves-light btn btn-acheter" href="#!" onclick="$('#modal_salle').modal('close');">Valider</a>
+                            </div>
+                        </div>
+
+            <!--fin modal-->
+
+                 <div class="recherche_principale">
+                    <div class="recherche_principale_champs meme-ligne centrer_champs">
+                        <h5 style="display: table; margin-top: 18px;">Nouvelle recherche: </h5>
+                        <input placeholder="Metallica Toulouse 16/02/17 ..." id="search" type="text" class="validate meme-ligne" style="width: 70%;min-width: 250px; margin-top: 10px; margin-left: 10px; margin-right: 10px;">
+                        <a class="waves-effect waves-light btn meme-ligne" style="margin-top: 14px;text-align: center;" href="./search.html">Valider</a>
+                    </div>
+                    <div class="recherche_principale_filtres">
+                        <p class="margin0">Filtrer par:</p>
+                        <div class="center">
+                            <ul class="meme-ligne">
+                                <li class="search_item"><a href="#modal_genre" onclick="$(this).css('color', 'black');">Genre</a></li>
+                                <li class="search_item"><a href="#" id="liendate1">Date</a></li>
+                                <input type="hidden" id="dp" /></li>
+                                 <input type="date" class="datepicker" id="datecache1" style="display: none;">
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col s1">
-                  <span class="result_research_headline">Date:</span>
-                  <p>16/09/2017</p>
+                <div class="divider"></div>
+                <div class="recherche_filtres">
+                    <h5>Résultats: 14</h5>
+                    <p class="margin0">Triéer par:</p>
+                    <div class="center">
+                        <ul class="meme-ligne">
+                            <!--TODO a finir-->
+                            <li class="search_item"><a href="./search_artiste.html">Artiste</a>
+                            </li>
+                            <li class="search_item"><a href="#modal_ville" onclick="$(this).css('color', 'black');">Ville</a>
+                            </li>
+                            <li class="search_item"><a href="#modal_genre" onclick="$(this).css('color', 'black');">Genre</a>
+                            </li>
+                            <li class="search_item"><a href="#" id="liendate2">Date</a>
+                            </li>
+                            <li class="search_item"><a href="#modal_salle" onclick="$(this).css('color', 'black');">Salle</a>
+                            </li>
+                            <li class="search_item"><a href="./search_prix">Prix</a>
+                            </li>
+                            <li class="search_item"><a href="./search_avis">Avis</a>
+                            </li>
+                            <input type="hidden" id="dp" />
+                            <div></div>
+                            </li>
+                        </ul>
+                     <input type="date" class="datepicker" id="datecache2" style="display: none;">
+                    </div>
                 </div>
-                <div class="col s1">
-                  <span class="result_research_headline">Heure:</span>
-                  <p>22:00</p>
+        <!-- fin filtres-->
+            
+            <div class="result">
+                <div class="item_result">
+                    <div class="result_research">
+                        <div class="row">
+                            <div class="col s2"><img src="./ress/img/affiches/JCash.jpg" alt="affiche d'un concert de musique">
+                            </div>
+                            <div class="col s3">
+                                <span class="result_research_headline">Johnny Cash</span>
+                                <p>Lieu: Condom</p>
+                                <p>Adresse: St Pierre de Montesquieu</p>
+                            </div>
+                            <div class="col s1">
+                                <span class="result_research_headline">Date:</span>
+                                <p>25/11/2015</p>
+                            </div>
+                            <div class="col s1">
+                                <span class="result_research_headline">Heure:</span>
+                                <p>15:45</p>
+                            </div>
+                            <div class="col s3">
+                                <span class="result_research_headline">Avis:</span>
+                                <div class="meme_ligne">
+                                    <i class="fa fa-star " aria-hidden="true"></i>
+                                    <i class="fa fa-star " aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="col s2">
+                                <span class="result_research_headline">Prix:</span>
+                                <br>
+                                <span class="prix">35€</span>
+                                <br>
+                                <a class="waves-effect waves-light btn btn-acheter" href="./search_detail.html">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col s3">
-                  <span class="result_research_headline">Avis:</span>
-                  <div class="meme_ligne">
-                    <i class="fa fa-star " aria-hidden="true"></i>
-                    <i class="fa fa-star " aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                  </div>
+                <!--Fin div concert-->
+                <div class="item_result">
+                    <div class="result_research">
+                        <div class="row">
+                            <div class="col s2"><img src="./ress/img/affiches/jul.jpg" alt="affiche d'un concert de musique">
+                            </div>
+                            <div class="col s3">
+                                <span class="result_research_headline">Jul</span>
+                                <p>Lieu: Paris Bercy</p>
+                                <p>Adresse: 8 Bouleverd de Bercy</p>
+                            </div>
+                            <div class="col s1">
+                                <span class="result_research_headline">Date:</span>
+                                <p>06/06/2017</p>
+                            </div>
+                            <div class="col s1">
+                                <span class="result_research_headline">Heure:</span>
+                                <p>20:30</p>
+                            </div>
+                            <div class="col s3">
+                                <span class="result_research_headline">Avis:</span>
+                                <div class="meme_ligne">
+                                    <i class="fa fa-star-half-o " aria-hidden="true"></i>
+                                    <i class="fa fa-star-o " aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="col s2">
+                                <span class="result_research_headline">Prix:</span>
+                                <br>
+                                <span class="prix">01€</span>
+                                <br>
+                                <a class="waves-effect waves-light btn btn-acheter" href="./search_detail.html">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col s2">
-                  <span class="result_research_headline">Prix:</span>
-                  <br>
-                  <span class="prix">35€</span>
-                  <br>
-                  <a class="waves-effect waves-light btn btn-acheter" href="./search_detail.html">Acheter</a>
+                <!--Fin div concert-->
+                <div class="item_result">
+                    <div class="result_research">
+                        <div class="row">
+                            <div class="col s2"><img src="./ress/img/affiches/Kendgi.jpg" alt="affiche d'un concert de musique">
+                            </div>
+                            <div class="col s3">
+                                <span class="result_research_headline">Kendgi Girac</span>
+                                <p>Lieu: Paris Bercy</p>
+                                <p>Adresse: 8 Boulevard de Bercy</p>
+                            </div>
+                            <div class="col s1">
+                                <span class="result_research_headline">Date:</span>
+                                <p>12/06/2017</p>
+                            </div>
+                            <div class="col s1">
+                                <span class="result_research_headline">Heure:</span>
+                                <p>11:50</p>
+                            </div>
+                            <div class="col s3">
+                                <span class="result_research_headline">Avis:</span>
+                                <div class="meme_ligne">
+                                    <i class="fa fa-star-o " aria-hidden="true"></i>
+                                    <i class="fa fa-star-o " aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="col s2">
+                                <span class="result_research_headline">Prix:</span>
+                                <br>
+                                <span class="prix">0.05€</span>
+                                <br>
+                                <a class="waves-effect waves-light btn btn-acheter" href="./search_detail.html">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <!--Fin div concert-->
+                <div class="item_result">
+                    <div class="result_research">
+                        <div class="row">
+                            <div class="col s2"><img src="./ress/img/affiches/linkinPark.jpg" alt="affiche d'un concert de musique">
+                            </div>
+                            <div class="col s3">
+                                <span class="result_research_headline">Linkin Park</span>
+                                <p>Lieu: Lyon - Zenith</p>
+                                <p>Adresse: 25 rue des Fossés de Trion</p>
+                            </div>
+                            <div class="col s1">
+                                <span class="result_research_headline">Date:</span>
+                                <p>31/03/2017</p>
+                            </div>
+                            <div class="col s1">
+                                <span class="result_research_headline">Heure:</span>
+                                <p>19:30</p>
+                            </div>
+                            <div class="col s3">
+                                <span class="result_research_headline">Avis:</span>
+                                <div class="meme_ligne">
+                                    <i class="fa fa-star " aria-hidden="true"></i>
+                                    <i class="fa fa-star " aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="col s2">
+                                <span class="result_research_headline">Prix:</span>
+                                <br>
+                                <span class="prix">30€</span>
+                                <br>
+                                <a class="waves-effect waves-light btn btn-acheter" href="./search_detail.html">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Fin div concert-->
+                <div class="item_result">
+                    <div class="result_research">
+                        <div class="row">
+                            <div class="col s2"><img src="./ress/img/affiches/gims.jpg" alt="affiche d'un concert de musique">
+                            </div>
+                            <div class="col s3">
+                                <span class="result_research_headline">Maitre Gim's</span>
+                                <p>Lieu: Marseille - Le Moulin</p>
+                                <p>Adresse: 47 Boulevars Perrin</p>
+                            </div>
+                            <div class="col s1">
+                                <span class="result_research_headline">Date:</span>
+                                <p>12/05/2017</p>
+                            </div>
+                            <div class="col s1">
+                                <span class="result_research_headline">Heure:</span>
+                                <p>01.23</p>
+                            </div>
+                            <div class="col s3">
+                                <span class="result_research_headline">Avis:</span>
+                                <div class="meme_ligne">
+                                    <i class="fa fa-star-half-io " aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="col s2">
+                                <span class="result_research_headline">Prix:</span>
+                                <br>
+                                <span class="prix">15€</span>
+                                <br>
+                                <a class="waves-effect waves-light btn btn-acheter" href="./search_detail.html">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Fin div concert-->
+                <div class="item_result">
+                    <div class="result_research">
+                        <div class="row">
+                            <div class="col s2"><img src="./ress/img/affiches/gims.jpg" alt="affiche d'un concert de musique">
+                            </div>
+                            <div class="col s3">
+                                <span class="result_research_headline">Maitre Gim's</span>
+                                <p>Lieu: Marseille - Le Moulin</p>
+                                <p>Adresse: 47 Boulevars Perrin</p>
+                            </div>
+                            <div class="col s1">
+                                <span class="result_research_headline">Date:</span>
+                                <p>14/05/2017</p>
+                            </div>
+                            <div class="col s1">
+                                <span class="result_research_headline">Heure:</span>
+                                <p>01:52</p>
+                            </div>
+                            <div class="col s3">
+                                <span class="result_research_headline">Avis:</span>
+                                <div class="meme_ligne">
+                                    <i class="fa fa-star-half-o " aria-hidden="true"></i>
+                                    <i class="fa fa-star-o " aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="col s2">
+                                <span class="result_research_headline">Prix:</span>
+                                <br>
+                                <span class="prix">15€</span>
+                                <br>
+                                <a class="waves-effect waves-light btn btn-acheter" href="./search_detail.html">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Fin div concert-->
+
+
+                <div class="item_result">
+                    <div class="result_research">
+                        <div class="row">
+                            <div class="col s2"><img src="./ress/img/affiches/metallica.jpg" alt="affiche d'un concert de musique">
+                            </div>
+                            <div class="col s3">
+                                <span class="result_research_headline">Metalicca</span>
+                                <p>Lieu: Paris Bercy</p>
+                                <p>Adresse: 8 Boulevard de Bercy</p>
+                            </div>
+                            <div class="col s1">
+                                <span class="result_research_headline">Date:</span>
+                                <p>16/09/2017</p>
+                            </div>
+                            <div class="col s1">
+                                <span class="result_research_headline">Heure:</span>
+                                <p>22:00</p>
+                            </div>
+                            <div class="col s3">
+                                <span class="result_research_headline">Avis:</span>
+                                <div class="meme_ligne">
+                                    <i class="fa fa-star " aria-hidden="true"></i>
+                                    <i class="fa fa-star " aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="col s2">
+                                <span class="result_research_headline">Prix:</span>
+                                <br>
+                                <span class="prix">35€</span>
+                                <br>
+                                <a class="waves-effect waves-light btn btn-acheter" href="./search_detail.html">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Fin div concert-->
+                <div class="item_result">
+                    <div class="result_research">
+                        <div class="row">
+                            <div class="col s2"><img src="./ress/img/affiches/metallica.jpg" alt="affiche d'un concert de musique">
+                            </div>
+                            <div class="col s3">
+                                <span class="result_research_headline">Metalicca</span>
+                                <p>Lieu: Paris Bercy</p>
+                                <p>Adresse: 8 Boulevard de Bercy</p>
+                            </div>
+                            <div class="col s1">
+                                <span class="result_research_headline">Date:</span>
+                                <p>18/09/2017</p>
+                            </div>
+                            <div class="col s1">
+                                <span class="result_research_headline">Heure:</span>
+                                <p>22:00</p>
+                            </div>
+                            <div class="col s3">
+                                <span class="result_research_headline">Avis:</span>
+                                <div class="meme_ligne">
+                                    <i class="fa fa-star " aria-hidden="true"></i>
+                                    <i class="fa fa-star " aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="col s2">
+                                <span class="result_research_headline">Prix:</span>
+                                <br>
+                                <span class="prix">35€</span>
+                                <br>
+                                <a class="waves-effect waves-light btn btn-acheter" href="./search_detail.html">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Fin div concert-->
+                <div class="item_result">
+                    <div class="result_research">
+                        <div class="row">
+                            <div class="col s2"><img src="./ress/img/affiches/RedHot.jpg" alt="affiche d'un concert de musique">
+                            </div>
+                            <div class="col s3">
+                                <span class="result_research_headline">Red Hot Chili Peppers</span>
+                                <p>Lieu: Strasbourg - Zenith</p>
+                                <p>Adresse: 1 allée du zenith</p>
+                            </div>
+                            <div class="col s1">
+                                <span class="result_research_headline">Date:</span>
+                                <p>12/05/2017</p>
+                            </div>
+                            <div class="col s1">
+                                <span class="result_research_headline">Heure:</span>
+                                <p>11:50</p>
+                            </div>
+                            <div class="col s3">
+                                <span class="result_research_headline">Avis:</span>
+                                <div class="meme_ligne">
+                                    <i class="fa fa-star " aria-hidden="true"></i>
+                                    <i class="fa fa-star " aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="col s2">
+                                <span class="result_research_headline">Prix:</span>
+                                <br>
+                                <span class="prix">20€</span>
+                                <br>
+                                <a class="waves-effect waves-light btn btn-acheter" href="./search_detail.html">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Fin div concert-->
+                <div class="item_result">
+                    <div class="result_research">
+                        <div class="row">
+                            <div class="col s2"><img src="./ress/img/affiches/vivaldi.jpg" alt="affiche d'un concert de musique">
+                            </div>
+                            <div class="col s3">
+                                <span class="result_research_headline">Vivaldi</span>
+                                <p>Lieu: Versaille</p>
+                                <p>Adresse: Place d'Armes</p>
+                            </div>
+                            <div class="col s1">
+                                <span class="result_research_headline">Date:</span>
+                                <p>01/01/1728</p>
+                            </div>
+                            <div class="col s1">
+                                <span class="result_research_headline">Heure:</span>
+                                <p>13:20</p>
+                            </div>
+                            <div class="col s3">
+                                <span class="result_research_headline">Avis:</span>
+                                <div class="meme_ligne">
+                                    <i class="fa fa-star " aria-hidden="true"></i>
+                                    <i class="fa fa-star " aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="col s2">
+                                <span class="result_research_headline">Prix:</span>
+                                <br>
+                                <span class="prix">19€</span>
+                                <br>
+                                <a class="waves-effect waves-light btn btn-acheter" href="./search_detail.html">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Fin div concert-->
+
             </div>
-          </div><!--Fin div concert-->
-         <div class="item_result">
-            <div class="result_research">
-              <div class="row">
-                <div class="col s2"><img src="./ress/img/affiches/metallica.jpg" alt="affiche d'un concert de musique"></div>
-                <div class="col s3">
-                  <span class="result_research_headline">Metalicca</span>
-                  <p>Lieu: Paris Bercy</p>
-                  <p>Adresse: 8 Boulevard de Bercy</p>
-                </div>
-                <div class="col s1">
-                  <span class="result_research_headline">Date:</span>
-                  <p>18/09/2017</p>
-                </div>
-                <div class="col s1">
-                  <span class="result_research_headline">Heure:</span>
-                  <p>22:00</p>
-                </div>
-                <div class="col s3">
-                  <span class="result_research_headline">Avis:</span>
-                  <div class="meme_ligne">
-                    <i class="fa fa-star " aria-hidden="true"></i>
-                    <i class="fa fa-star " aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                  </div>
-                </div>
-                <div class="col s2">
-                  <span class="result_research_headline">Prix:</span>
-                  <br>
-                  <span class="prix">35€</span>
-                  <br>
-                  <a class="waves-effect waves-light btn btn-acheter" href="./search_detail.html">Acheter</a>
-                </div>
-              </div>
-            </div>
-          </div><!--Fin div concert-->
-          <div class="item_result">
-            <div class="result_research">
-              <div class="row">
-                <div class="col s2"><img src="./ress/img/affiches/RedHot.jpg" alt="affiche d'un concert de musique"></div>
-                <div class="col s3">
-                  <span class="result_research_headline">Red Hot Chili Peppers</span>
-                  <p>Lieu: Strasbourg - Zenith</p>
-                  <p>Adresse: 1 allée du zenith</p>
-                </div>
-                <div class="col s1">
-                  <span class="result_research_headline">Date:</span>
-                  <p>12/05/2017</p>
-                </div>
-                <div class="col s1">
-                  <span class="result_research_headline">Heure:</span>
-                  <p>11:50</p>
-                </div>
-                <div class="col s3">
-                  <span class="result_research_headline">Avis:</span>
-                  <div class="meme_ligne">
-                    <i class="fa fa-star " aria-hidden="true"></i>
-                    <i class="fa fa-star " aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                  </div>
-                </div>
-                <div class="col s2">
-                  <span class="result_research_headline">Prix:</span>
-                  <br>
-                  <span class="prix">20€</span>
-                  <br>
-                  <a class="waves-effect waves-light btn btn-acheter" href="./search_detail.html">Acheter</a>
-                </div>
-              </div>
-            </div>
-          </div><!--Fin div concert-->
-          <div class="item_result">
-            <div class="result_research">
-              <div class="row">
-                <div class="col s2"><img src="./ress/img/affiches/vivaldi.jpg" alt="affiche d'un concert de musique"></div>
-                <div class="col s3">
-                  <span class="result_research_headline">Vivaldi</span>
-                  <p>Lieu: Versaille</p>
-                  <p>Adresse: Place d'Armes</p>
-                </div>
-                <div class="col s1">
-                  <span class="result_research_headline">Date:</span>
-                  <p>01/01/1728</p>
-                </div>
-                <div class="col s1">
-                  <span class="result_research_headline">Heure:</span>
-                  <p>13:20</p>
-                </div>
-                <div class="col s3">
-                  <span class="result_research_headline">Avis:</span>
-                  <div class="meme_ligne">
-                    <i class="fa fa-star " aria-hidden="true"></i>
-                    <i class="fa fa-star " aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                  </div>
-                </div>
-                <div class="col s2">
-                  <span class="result_research_headline">Prix:</span>
-                  <br>
-                  <span class="prix">19€</span>
-                  <br>
-                  <a class="waves-effect waves-light btn btn-acheter" href="./search_detail.html">Acheter</a>
-                </div>
-              </div>
-            </div>
-          </div><!--Fin div concert-->
-          
         </div>
-      </div>
     </div>
     <div w3-include-html="ress/composants/footer.html"></div>
-    
+
     <!--Import jQuery avant materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="./ress/js/materialize.min.js"></script>
     <script type="text/javascript" src="./ress/js/jquery.cookie.js"></script>
     <script src="http://www.w3schools.com/lib/w3data.js"></script>
     <script>
-    w3IncludeHTML();
+        w3IncludeHTML();
     </script>
     <script type="text/javascript" src="ress/js/fonction.js"></script>
     <script type="text/javascript">
-    $(document).ready(function(){
-        sideN();
-        navbar(); 
-      });
+        $(document).ready(function() {
+            sideN();
+            navbar();
+
+            $('.modal').modal();
+            $('select').material_select();
+            $('#datecache1').pickadate({
+                selectMonths: true,
+                selectYears: 17
+            });
+            $('#datecache2').pickadate({
+                selectMonths: true,
+                selectYears: 17
+            });
+
+            $('#liendate1').click(function(e) {
+                $('#datecache1').pickadate().pickadate('picker').open();
+                $('#liendate1').css('color', 'black');
+                e.preventDefault();
+            });
+
+            $('#liendate2').click(function(e) {
+                $('#datecache2').pickadate().pickadate('picker').open();
+                $('#liendate2').css('color', 'black');
+                e.preventDefault();
+            });
+
+             $('#autocomplete-input_ville').autocomplete({
+                data: {
+                  "Paris": null,
+                  "Toulouse": null,
+                  "Lyon": null,
+                  "Amsterdam": null
+                }
+              });
+               $('#autocomplete-input_salle').autocomplete({
+                data: {
+                  "St Pierre de Montesquieu - Condom": null,
+                  "Bercy - Paris": null,
+                  "Zenith - Lyon": null,
+                  "Le Moulin - Marseille": null
+                }
+              });
+        });
     </script>
-  </body>
+</body>
+
 </html>

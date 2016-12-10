@@ -1,221 +1,280 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Concerto</title>
     <meta charset="UTF-8">
     <!--Import Google Icon Font et font awsome4-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./ress/css/font-awesome.min.css">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="./ress/css/jquery-ui.css"/>
-    <!--jquery mobile-->
-    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
-    <link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/simpledialog/latest/jquery.mobile.simpledialog.min.css" />
+    <link type="text/css" rel="stylesheet" href="./ress/css/jquery-ui.css" />
     <!-- mes css-->
-    <link type="text/css" rel="stylesheet" href="./ress/css/materialize.min.css"/>
+    <link type="text/css" rel="stylesheet" href="./ress/css/materialize.min.css" />
     <link href="./ress/css/style.css" rel="stylesheet">
     <!--optimisé pour mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- js de prechargemment-->
     <link rel="icon" type="image/png" href="favicon.ico" />
-    
-  </head>
-  <body>
+</head>
+
+<body>
     <div w3-include-html="./ress/composants/header.html"></div>
-    
     <div class="container ">
-      <div class="search">
-        <div w3-include-html="./ress/composants/search_main.html"></div>
-      </div>
-      
-      <h4>A proximite:</h4>
-	<div class="groupe-promo">
-        <!-- un item de promotion-->
-        <div class="card promo_home">
-          <div class="card-image waves-effect waves-block waves-light">
-            <div class="promo_prix overlay prix"><span id="prix">35</span>€</div>
-            <img class="activator" src="./ress/img/affiches/metallica.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title grey-text text-darken-4 promo_titre">Metalicca - Paris Bercy</span>
-            <p>Le 16/09/17 et 18/09/17</p>
-            <p class="promo_buton"><a class="waves-effect waves-light btn " href="./search_detail.html">Acheter</a><p>
-          </div>
+        <div class="search">
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+                <div class="modal-content center">
+                    <h4>Genre de musique: </h4>
+                    <div class="input-field col s12">
+                        <select multiple>
+                            <option value="" disabled selected>Choisissez un genre</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Genre:</label>
+                    </div>
+                    </br>
+                    <a class="waves-effect waves-light btn btn-acheter" href="#!" onclick="$('#modal1').modal('close');">Valider</a>
+                </div>
+            </div>
+            <div class="recherche_principale">
+                <div class="recherche_principale_champs meme-ligne">
+                    <h4>Recherche: </h4>
+                    <input placeholder="Metallica Toulouse 16/02/17 ..." id="search" type="text" class="validate meme-ligne" style="width: 70%;min-width: 250px; margin-top: 10px; margin-left: 10px; margin-right: 10px;">
+                    <a class="waves-effect waves-light btn meme-ligne" style="margin-top: 10px;text-align: center;" href="./search.html">Valider</a>
+                </div>
+                <div class="recherche_principale_filtres">
+                    <p>Filtrer par:</p>
+                    <div class="center">
+                        <ul class="meme-ligne">
+                            <li class="search_item"><a href="#modal1" onclick="$(this).css('color', 'black');">Genre</a>
+                            </li>
+                            <li class="search_item"><a href="#" id="liendate">Date</a>
+                            </li>
+                            </li>
+                        </ul>
+                        <input type="date" class="datepicker" id="datecache" style="display: none;">
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
         </div>
-        <!-- un item de promotion-->
-        <div class="card promo_home">
-          <div class="card-image waves-effect waves-block waves-light">
-            <div class="promo_prix overlay prix"><span id="prix">25</span>€</div>
-            <img class="activator" src="./ress/img/affiches/SoaD.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title grey-text text-darken-4 promo_titre">System of a down - Paris Bercy</span>
-            <p>Le 06/06/17</p>
-            <p class="promo_buton"><a class="waves-effect waves-light btn " href="./search_detail.html">Acheter</a><p>
-          </div>
+
+        <h4>A proximite:</h4>
+        <div class="groupe-promo">
+            <!-- un item de promotion-->
+            <div class="card promo_home">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <div class="promo_prix overlay prix"><span id="prix">35</span>€</div>
+                    <img class="activator" src="./ress/img/affiches/metallica.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title grey-text text-darken-4 promo_titre">Metalicca - Paris Bercy</span>
+                    <p>Le 16/09/17 et 18/09/17</p>
+                    <p class="promo_buton"><a class="waves-effect waves-light btn " href="./search_detail.html">Acheter</a>
+                        <p>
+                </div>
+            </div>
+            <!-- un item de promotion-->
+            <div class="card promo_home">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <div class="promo_prix overlay prix"><span id="prix">25</span>€</div>
+                    <img class="activator" src="./ress/img/affiches/SoaD.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title grey-text text-darken-4 promo_titre">System of a down - Paris Bercy</span>
+                    <p>Le 06/06/17</p>
+                    <p class="promo_buton"><a class="waves-effect waves-light btn " href="./search_detail.html">Acheter</a>
+                        <p>
+                </div>
+            </div>
+            <!-- un item de promotion-->
+            <div class="card promo_home">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <div class="promo_prix overlay prix"><span id="prix">0.05</span>€</div>
+                    <img class="activator" src="./ress/img/affiches/Kendgi.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title grey-text text-darken-4 promo_titre">Kendji Girac - Paris Bercy</span>
+                    <p>Le 12/06/17</p>
+                    <p class="promo_buton"><a class="waves-effect waves-light btn " href="./search_detail.html">Acheter</a>
+                        <p>
+                </div>
+            </div>
         </div>
-        <!-- un item de promotion-->
-        <div class="card promo_home">
-          <div class="card-image waves-effect waves-block waves-light">
-            <div class="promo_prix overlay prix"><span id="prix">0.05</span>€</div>
-            <img class="activator" src="./ress/img/affiches/Kendgi.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title grey-text text-darken-4 promo_titre">Kendji Girac - Paris Bercy</span>
-            <p>Le 12/06/17</p>
-            <p class="promo_buton"><a class="waves-effect waves-light btn " href="./search_detail.html">Acheter</a><p>
-          </div>
+        <!--fin div groupe promo-->
+        <h4>Tendences:</h4>
+        <div class="groupe-promo">
+            <!-- un item de promotion-->
+            <div class="card promo_home">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <div class="promo_prix overlay prix"><span id="prix">35</span>€</div>
+                    <img class="activator" src="./ress/img/affiches/metallica.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title grey-text text-darken-4 promo_titre">Metalicca - Paris Bercy</span>
+                    <p>Le 16/09/17 et 18/09/17</p>
+                    <p class="promo_buton"><a class="waves-effect waves-light btn " href="./search_detail.html">Acheter</a>
+                        <p>
+                </div>
+            </div>
+
+            <!-- un item de promotion-->
+            <div class="card promo_home">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <div class="promo_prix overlay prix"><span id="prix">25</span>€</div>
+                    <img class="activator" src="./ress/img/affiches/SoaD.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title grey-text text-darken-4 promo_titre">System of a down - Paris Bercy</span>
+                    <p>Le 06/06/17</p>
+                    <p class="promo_buton"><a class="waves-effect waves-light btn " href="./search_detail.html">Acheter</a>
+                        <p>
+                </div>
+            </div>
+
+            <!-- un item de promotion-->
+            <div class="card promo_home">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <div class="promo_prix overlay prix"><span id="prix">0.05</span>€</div>
+                    <img class="activator" src="./ress/img/affiches/Kendgi.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title grey-text text-darken-4 promo_titre">Kendji Girac - Marseille</span>
+                    <p>Le 12/05/17 et 14/05/17</p>
+                    <p class="promo_buton"><a class="waves-effect waves-light btn " href="./search_detail.html">Acheter</a>
+                        <p>
+                </div>
+            </div>
         </div>
-      </div><!--fin div groupe promo-->
-      
-      <h4>Tendences:</h4>
-      
-      <div class="groupe-promo">
-        <!-- un item de promotion-->
-        <div class="card promo_home">
-          <div class="card-image waves-effect waves-block waves-light">
-            <div class="promo_prix overlay prix"><span id="prix">35</span>€</div>
-            <img class="activator" src="./ress/img/affiches/metallica.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title grey-text text-darken-4 promo_titre">Metalicca - Paris Bercy</span>
-            <p>Le 16/09/17 et 18/09/17</p>
-            <p class="promo_buton"><a class="waves-effect waves-light btn " href="./search_detail.html">Acheter</a><p>
-          </div>
+        <!--fin div groupe promo-->
+        <h4>Nouveautes:</h4>
+        <div class="groupe-promo">
+            <!-- un item de promotion-->
+            <div class="card promo_home">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <div class="promo_prix overlay prix"><span id="prix">19</span>€</div>
+                    <img class="activator" src="./ress/img/affiches/vivaldi.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title grey-text text-darken-4 promo_titre">Vivaldi - Versaille</span>
+                    <p>Le 01/01/1728</p>
+                    <p class="promo_buton"><a class="waves-effect waves-light btn " href="./search_detail.html">Acheter</a>
+                        <p>
+                </div>
+            </div>
+
+            <!-- un item de promotion-->
+            <div class="card promo_home">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <div class="promo_prix overlay prix"><span id="prix">01</span>€</div>
+                    <img class="activator" src="./ress/img/affiches/jul.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title grey-text text-darken-4 promo_titre">Jul - Paris Bercy</span>
+                    <p>Le 06/06/17</p>
+                    <p class="promo_buton"><a class="waves-effect waves-light btn " href="./search_detail.html">Acheter</a>
+                        <p>
+                </div>
+            </div>
+
+            <!-- un item de promotion-->
+            <div class="card promo_home">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <div class="promo_prix overlay prix"><span id="prix">15</span>€</div>
+                    <img class="activator" src="./ress/img/affiches/gims.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title grey-text text-darken-4 promo_titre">Maitre Gim's - Marseille</span>
+                    <p>Le 12/05/17 et 14/05/17</p>
+                    <p class="promo_buton"><a class="waves-effect waves-light btn " href="./search_detail.html">Acheter</a>
+                        <p>
+                </div>
+            </div>
         </div>
-        
-        <!-- un item de promotion-->
-        <div class="card promo_home">
-          <div class="card-image waves-effect waves-block waves-light">
-            <div class="promo_prix overlay prix"><span id="prix">25</span>€</div>
-            <img class="activator" src="./ress/img/affiches/SoaD.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title grey-text text-darken-4 promo_titre">System of a down - Paris Bercy</span>
-            <p>Le 06/06/17</p>
-            <p class="promo_buton"><a class="waves-effect waves-light btn " href="./search_detail.html">Acheter</a><p>
-          </div>
+        <!--fin div groupe promo-->
+
+        <h4>Prochainements:</h4>
+
+        <div class="groupe-promo">
+            <!-- un item de promotion-->
+            <div class="card promo_home">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <div class="promo_prix overlay prix"><span id="prix">20</span>€</div>
+                    <img class="activator" src="./ress/img/affiches/RedHot.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title grey-text text-darken-4 promo_titre">Red Hot Chili Peppers - Strasbourg</span>
+                    <p>Le 12/05/17</p>
+                    <p class="promo_buton"><a class="waves-effect waves-light btn " href="./search_detail.html">Acheter</a>
+                        <p>
+                </div>
+            </div>
+
+            <!-- un item de promotion-->
+            <div class="card promo_home">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <div class="promo_prix overlay prix"><span id="prix">30</span>€</div>
+                    <img class="activator" src="./ress/img/affiches/linkinPark.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title grey-text text-darken-4 promo_titre">linkinPark - Lyon</span>
+                    <p>Le 31/03/17</p>
+                    <p class="promo_buton"><a class="waves-effect waves-light btn " href="./search_detail.html">Acheter</a>
+                        <p>
+                </div>
+            </div>
+
+            <!-- un item de promotion-->
+            <div class="card promo_home">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <div class="promo_prix overlay prix"><span id="prix">35</span>€</div>
+                    <img class="activator" src="./ress/img/affiches/JCash.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title grey-text text-darken-4 promo_titre">Johnny Cash - Condom</span>
+                    <p>Le 25/11/15</p>
+                    <p class="promo_buton"><a class="waves-effect waves-light btn " href="./search_detail.html">Acheter</a>
+                        <p>
+                </div>
+            </div>
         </div>
-        
-        <!-- un item de promotion-->
-        <div class="card promo_home">
-          <div class="card-image waves-effect waves-block waves-light">
-            <div class="promo_prix overlay prix"><span id="prix">0.05</span>€</div>
-            <img class="activator" src="./ress/img/affiches/Kendgi.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title grey-text text-darken-4 promo_titre">Kendji Girac - Marseille</span>
-            <p>Le 12/05/17 et 14/05/17</p>
-            <p class="promo_buton"><a class="waves-effect waves-light btn " href="./search_detail.html">Acheter</a><p>
-          </div>
-        </div>
-      </div> <!--fin div groupe promo-->
-      
-      <h4>Nouveautes:</h4>
-      
-      <div class="groupe-promo">
-        <!-- un item de promotion-->
-        <div class="card promo_home">
-          <div class="card-image waves-effect waves-block waves-light">
-            <div class="promo_prix overlay prix"><span id="prix">19</span>€</div>
-            <img class="activator" src="./ress/img/affiches/vivaldi.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title grey-text text-darken-4 promo_titre">Vivaldi - Versaille</span>
-            <p>Le 01/01/1728</p>
-            <p class="promo_buton"><a class="waves-effect waves-light btn " href="./search_detail.html">Acheter</a><p>
-          </div>
-        </div>
-        
-        <!-- un item de promotion-->
-        <div class="card promo_home">
-          <div class="card-image waves-effect waves-block waves-light">
-            <div class="promo_prix overlay prix"><span id="prix">01</span>€</div>
-            <img class="activator" src="./ress/img/affiches/jul.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title grey-text text-darken-4 promo_titre">Jul - Paris Bercy</span>
-            <p>Le 06/06/17</p>
-            <p class="promo_buton"><a class="waves-effect waves-light btn " href="./search_detail.html">Acheter</a><p>
-          </div>
-        </div>
-        
-        <!-- un item de promotion-->
-        <div class="card promo_home">
-          <div class="card-image waves-effect waves-block waves-light">
-            <div class="promo_prix overlay prix"><span id="prix">15</span>€</div>
-            <img class="activator" src="./ress/img/affiches/gims.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title grey-text text-darken-4 promo_titre">Maitre Gim's - Marseille</span>
-            <p>Le 12/05/17 et 14/05/17</p>
-            <p class="promo_buton"><a class="waves-effect waves-light btn " href="./search_detail.html">Acheter</a><p>
-          </div>
-        </div>
-      </div>  <!--fin div groupe promo-->
-      
-      <h4>Prochainements:</h4>
-      
-      <div class="groupe-promo">
-        <!-- un item de promotion-->
-        <div class="card promo_home">
-          <div class="card-image waves-effect waves-block waves-light">
-            <div class="promo_prix overlay prix"><span id="prix">20</span>€</div>
-            <img class="activator" src="./ress/img/affiches/RedHot.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title grey-text text-darken-4 promo_titre">Red Hot Chili Peppers - Strasbourg</span>
-            <p>Le 12/05/17</p>
-            <p class="promo_buton"><a class="waves-effect waves-light btn " href="./search_detail.html">Acheter</a><p>
-          </div>
-        </div>
-        
-        <!-- un item de promotion-->
-        <div class="card promo_home">
-          <div class="card-image waves-effect waves-block waves-light">
-            <div class="promo_prix overlay prix"><span id="prix">30</span>€</div>
-            <img class="activator" src="./ress/img/affiches/linkinPark.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title grey-text text-darken-4 promo_titre">linkinPark - Lyon</span>
-            <p>Le 31/03/17</p>
-            <p class="promo_buton"><a class="waves-effect waves-light btn " href="./search_detail.html">Acheter</a><p>
-          </div>
-        </div>
-        
-        <!-- un item de promotion-->
-        <div class="card promo_home">
-          <div class="card-image waves-effect waves-block waves-light">
-            <div class="promo_prix overlay prix"><span id="prix">35</span>€</div>
-            <img class="activator" src="./ress/img/affiches/JCash.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title grey-text text-darken-4 promo_titre">Johnny Cash - Condom</span>
-            <p>Le 25/11/15</p>
-            <p class="promo_buton"><a class="waves-effect waves-light btn " href="./search_detail.html">Acheter</a><p>
-          </div>
-        </div>
-      </div> <!--fin div groupe promo-->
+        <!--fin div groupe promo-->
     </div>
     <div w3-include-html="ress/composants/footer.html"></div>
-    
+
     <!--Import jQuery avant materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="./ress/js/jquery-ui.js"></script>
     <script type="text/javascript" src="./ress/js/jquery.cookie.js"></script>
-    <script type="text/javascript" src="./ress/js/materialize.min.js"></script>
     <script src="http://www.w3schools.com/lib/w3data.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
-    <script type="text/javascript" src="http://dev.jtsage.com/cdn/simpledialog/latest/jquery.mobile.simpledialog2.min.js"></script>
+    <script type="text/javascript" src="./ress/js/materialize.min.js"></script>
     <script>
-    w3IncludeHTML();
+        w3IncludeHTML();
     </script>
     <script type="text/javascript" src="ress/js/fonction.js"></script>
     <script type="text/javascript">
-    $(document).ready(function(){
-        sideN();
-        navbar(); 
-      });
+        $(document).ready(function() {
+            sideN();
+            navbar();
+
+            $('.modal').modal();
+            $('select').material_select();
+            $('#datecache').pickadate({
+                selectMonths: true,
+                selectYears: 17
+            });
+
+            $('#liendate').click(function(e) {
+                $('#datecache').pickadate().pickadate('picker').open();
+                $('#liendate').css('color', 'black');
+                e.preventDefault();
+            });
+
+        });
     </script>
-  </body>
+</body>
+
 </html>

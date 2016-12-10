@@ -1,3 +1,20 @@
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content center">
+        <h4>Genre de musique: </h4>
+          <div class="input-field col s12">
+            <select multiple>
+              <option value="" disabled selected>Choisissez un genre</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+            <label>Genre:</label>
+          </div></br>
+           <a class="waves-effect waves-light btn btn-acheter" href="#!">Valider</a>
+    </div>
+</div>
+
 <div class="recherche_principale">
     <div class="recherche_principale_champs meme-ligne">
         <h4>Recherche: </h4>
@@ -8,13 +25,11 @@
         <p>Filtrer par:</p>
         <div class="center">
             <ul class="meme-ligne">
-                <li class="search_item"><a href="#">Genre</a></li>
-                <li class="search_item"><a href="#" id="datep">Date</a></li>
-                <li class="search_item"><a href="#">Salle</a></li>
-                <input type="hidden" id="dp" />
-                <div></div>
+                <li class="search_item"><a href="#modal1">Genre</a></li>
+                <li class="search_item"><a href="#" id="liendate">Date</a></li>
             </li>
         </ul>
+        <input type="date" class="datepicker" id="datecache" >
     </div>
 </div>
 </div>
