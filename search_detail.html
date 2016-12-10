@@ -17,9 +17,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!-- js de prechargemment-->
     <link rel="icon" type="image/png" href="favicon.ico" />
-    
   </head>
+
   <body>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content center">
+      <h4>Avez vous un compte ?</h4>  
+      <a class="waves-effect waves-light btn btn-acheter" onclick="achatconnexion()">Connexion</a>
+      OU
+      <a class="waves-effect waves-light btn btn-acheter" href="./pay.html">Continuer</a>
+    </div>
+  </div>
+        
     <div w3-include-html="./ress/composants/header.html"></div>
     <div class="container ">
       <div class="content fond">
@@ -79,7 +89,7 @@
               </div>
               </div>
               <div class="center">
-                 <a class="waves-effect waves-light btn btn-acheter" href="./pay.html">Payer</a>
+                 <a class="waves-effect waves-light btn btn-acheter" data-target="modal1" onclick="buttonachat()">Payer</a>
               </div>
 
               </div>
@@ -402,6 +412,7 @@
     <script type="text/javascript">
     $(document).ready(function(){
         sideN();
+         $('.modal').modal();
         navbar(); 
       });
     </script>

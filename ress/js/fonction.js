@@ -9,7 +9,14 @@ function sideN(){
 
 function connexion(){
   $.cookie("connexion", "1");
-  window.location.replace("./profile.html");
+
+  if(document.cookie.indexOf("a") >= 0) { 
+    window.location.replace("./pay.html");
+    $.removeCookie("achat_veux_co");
+  }else{
+    window.location.replace("./profile.html");
+  }
+  
 }
 
 
@@ -22,8 +29,19 @@ function inscription(){
 function deconnexion(){
     $.removeCookie("connexion");
     window.location.replace("./index.html");
-  
 }
+
+function buttonachat(){
+ if(document.cookie.indexOf("1") >= 0) { 
+    window.location.replace("./pay.html");
+  }
+}
+
+function achatconnexion(){
+   $.cookie("achat_veux_co", "a");
+   window.location.replace("./connexion.html");
+}
+
 
 function complete(){
  if(document.cookie.indexOf("1") >= 0) { 
