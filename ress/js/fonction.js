@@ -9,7 +9,7 @@ function sideN(){
 
 function connexion(){
   $.cookie("connexion", "1");
-  window.location.replace("./profile");
+  window.location.replace("./profile.html");
 }
 
 
@@ -59,6 +59,6 @@ function navbar(){
 }
 
 function nonImplemente(){
-	  Materialize.toast('Fonctionalite non implemenete dans le prototype.', 4000); // 4000 is the duration of the toast
+	  Materialize.toast('Fonctionnalité non implémentée dans le prototype.', 4000); // 4000 is the duration of the toast
 
 }
