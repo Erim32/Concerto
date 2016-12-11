@@ -1,5 +1,4 @@
 - les genres
-- lien twiter -facebook	
 ./search_artiste.html
 ./search_prix
 ./search_avis
