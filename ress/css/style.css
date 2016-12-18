@@ -22,7 +22,7 @@ nav {
 /********************Inscription************************************/
 
 .search_item {
-    margin-right: 50px;
+    margin: 0px 25px;
 }
 .content {
     border-radius: 2%;
@@ -91,6 +91,7 @@ textarea.materialize-textarea {
 }
 .promo_titre {
     text-align: center;
+    display: block !important;
 }
 .promo_buton {
     text-align: center;
@@ -114,6 +115,7 @@ textarea.materialize-textarea {
     background-color: #aaA9F4;
     z-index: 10000;
 }
+.card-content{text-align: center;}
 /*****************Result research******************/
 
 .margin0 {
