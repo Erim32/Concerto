@@ -1,4 +1,1 @@
-- les genres
-./search_artiste.html
 ./search_prix
-./search_avis

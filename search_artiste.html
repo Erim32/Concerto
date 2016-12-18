@@ -18,22 +18,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- js de prechargemment-->
     <link rel="icon" type="image/png" href="favicon.ico" />
+
 </head>
 
 <body>
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal">
-        <div class="modal-content center">
-            <h4>Avez vous un compte ?</h4>
-            <a class="waves-effect waves-light btn btn-acheter" onclick="achatconnexion()">Connexion</a> OU
-            <a class="waves-effect waves-light btn btn-acheter" href="./pay.html">Continuer</a>
-        </div>
-    </div>
-
     <div w3-include-html="./ress/composants/header.html"></div>
     <div class="container ">
         <div class="content fond">
-                  <!--DEBUT FILTRES-->
+        <!--DEBUT FILTRES-->
             <!--debut modals-->
                         <!-- Modal Structure -->
                         <div id="modal_genre" class="modal">
@@ -81,7 +73,7 @@
                         </div>
 
 
-                         <!-- Modal Structure -->
+                        <!-- Modal Structure -->
                         <div id="modal_salle" class="modal">
                             <div class="modal-content center">
                                 <h4>Saisissez une salle: </h4>
@@ -100,7 +92,9 @@
                                 <a class="waves-effect waves-light btn btn-acheter" href="#!" onclick="$('#modal_salle').modal('close');">Valider</a>
                             </div>
                         </div>
-                        <!--fin modal-->
+
+                <!--fin modal-->
+
                         <!-- Modal Structure -->
                         <div id="modal_prix" class="modal">
                             <div class="modal-content center">
@@ -154,7 +148,7 @@
                     <div class="center">
                         <ul class="meme-ligne">
                             <!--TODO a finir-->
-                            <li class="search_item"><a href="./search_artiste.html">Artiste</a>
+                            <li class="search_item"><a href="./search_artiste.html" style="color: black;">Artiste</a>
                             </li>
                             <li class="search_item"><a href="#modal_ville" onclick="$(this).css('color', 'black');">Ville</a>
                             </li>
@@ -164,7 +158,7 @@
                             </li>
                             <li class="search_item"><a href="#modal_salle" onclick="$(this).css('color', 'black');">Salle</a>
                             </li>
-                             <li class="search_item"><a href="#modal_prix" onclick="$(this).css('color', 'black');">Prix</a>
+                            <li class="search_item"><a href="#modal_prix" onclick="$(this).css('color', 'black');">Prix</a>
                             </li>
                             <li class="search_item"><a href="./search_avis.html">Avis</a>
                             </li>
@@ -176,6 +170,7 @@
                     </div>
                 </div>
         <!-- fin filtres-->
+            
             <div class="result">
                 <div class="item_result">
                     <div class="result_research">
@@ -208,36 +203,14 @@
                             <div class="col s2">
                                 <span class="result_research_headline">Prix:</span>
                                 <br>
-                                <span class="prix" style="font-size: 35px;">35€</span>
+                                <span class="prix">35€</span>
+                                <br>
+                                <a class="waves-effect waves-light btn btn-acheter" href="./search_detail.html">Acheter</a>
                             </div>
-                        </div>
-                        <div class="content_result">
-                            <span class="result_research_headline">Description du concert:</span>
-                            <br>
-                            <p>
-                                EVENEMENT JOHNNY CASH de retour d'outre tombe pour "I Walk The Line". Accompagné d'un grand nombre de musicien le 25 novembre 2015 à la salle des fêtes de Condom.
-                            </p>
-                            <br>
-                            <p>
-                                Après une carrière triomphale, Johnny Cash sera de retour sur scéne dans les plus grandes salles de France dès l'hiver 2015. Retrouvé le 25 novembre 2015 dans la célèbre salle du sud français: la salle de fète de Condom. Johnny Cash interprétera ses plus grands succés comme "Hurt", "Folsom Prison Blues" ou encore "Ring of Fire".
-                            </p>
-                            <br>
-                            <div class="row">
-                                <div class="col s4">
-                                    <span class="result_research_headline">Salle: Salle des fêtes</span><b></b>
-                                </div>
-                                <div class="col s4">
-                                    <span class="result_research_headline">Nombre de place: </span>
-                                    <input type="number" placeholder="1" name="quantity" min="1" max="100" style="height: 25px; width: 50px;">
-                                </div>
-                            </div>
-                            <div class="center">
-                                <a class="waves-effect waves-light btn btn-acheter" data-target="modal1" onclick="buttonachat()">Payer</a>
-                            </div>
-
                         </div>
                     </div>
                 </div>
+                <!--Fin div concert-->
                 <div class="item_result">
                     <div class="result_research">
                         <div class="row">
@@ -552,6 +525,46 @@
                     </div>
                 </div>
                 <!--Fin div concert-->
+                <div class="item_result">
+                    <div class="result_research">
+                        <div class="row">
+                            <div class="col s2"><img src="./ress/img/affiches/vivaldi.jpg" alt="affiche d'un concert de musique">
+                            </div>
+                            <div class="col s3">
+                                <span class="result_research_headline">Vivaldi</span>
+                                <p>Lieu: Versaille</p>
+                                <p>Adresse: Place d'Armes</p>
+                            </div>
+                            <div class="col s1">
+                                <span class="result_research_headline">Date:</span>
+                                <p>01/01/1728</p>
+                            </div>
+                            <div class="col s1">
+                                <span class="result_research_headline">Heure:</span>
+                                <p>13:20</p>
+                            </div>
+                            <div class="col s3">
+                                <span class="result_research_headline">Avis:</span>
+                                <div class="meme_ligne">
+                                    <i class="fa fa-star " aria-hidden="true"></i>
+                                    <i class="fa fa-star " aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="col s2">
+                                <span class="result_research_headline">Prix:</span>
+                                <br>
+                                <span class="prix">19€</span>
+                                <br>
+                                <a class="waves-effect waves-light btn btn-acheter" href="./search_detail.html">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Fin div concert-->
+
             </div>
         </div>
     </div>
@@ -562,8 +575,6 @@
     <script type="text/javascript" src="./ress/js/materialize.min.js"></script>
     <script type="text/javascript" src="./ress/js/jquery.cookie.js"></script>
     <script src="http://www.w3schools.com/lib/w3data.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
-    <script type="text/javascript" src="http://dev.jtsage.com/cdn/simpledialog/latest/jquery.mobile.simpledialog2.min.js"></script>
     <script>
         w3IncludeHTML();
     </script>
@@ -571,8 +582,47 @@
     <script type="text/javascript">
         $(document).ready(function() {
             sideN();
-            $('.modal').modal();
             navbar();
+
+            $('.modal').modal();
+            $('select').material_select();
+            $('#datecache1').pickadate({
+                selectMonths: true,
+                selectYears: 17
+            });
+            $('#datecache2').pickadate({
+                selectMonths: true,
+                selectYears: 17
+            });
+
+            $('#liendate1').click(function(e) {
+                $('#datecache1').pickadate().pickadate('picker').open();
+                $('#liendate1').css('color', 'black');
+                e.preventDefault();
+            });
+
+            $('#liendate2').click(function(e) {
+                $('#datecache2').pickadate().pickadate('picker').open();
+                $('#liendate2').css('color', 'black');
+                e.preventDefault();
+            });
+
+             $('#autocomplete-input_ville').autocomplete({
+                data: {
+                  "Paris": null,
+                  "Toulouse": null,
+                  "Lyon": null,
+                  "Amsterdam": null
+                }
+              });
+               $('#autocomplete-input_salle').autocomplete({
+                data: {
+                  "St Pierre de Montesquieu - Condom": null,
+                  "Bercy - Paris": null,
+                  "Zenith - Lyon": null,
+                  "Le Moulin - Marseille": null
+                }
+              });
         });
     </script>
 </body>

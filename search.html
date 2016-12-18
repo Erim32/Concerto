@@ -34,9 +34,17 @@
                                 <div class="input-field col s12">
                                     <select multiple>
                                         <option value="" disabled selected>Choisissez un genre</option>
-                                        <option value="1">Option 1</option>
-                                        <option value="2">Option 2</option>
-                                        <option value="3">Option 3</option>
+                                            <option value="1">Variété française</option>
+                                            <option value="2">Pop, Rock</option>
+                                            <option value="3">Musique Classique</option>
+                                            <option value="4">Jazz, Blues</option>
+                                            <option value="5">Rap</option>
+                                            <option value="6">RNB, Soul, Funk</option>
+                                            <option value="7">Variété internationale</option>
+                                            <option value="8">Electro</option>
+                                            <option value="9">Hard Rock, Metal</option>
+                                            <option value="10">Musiques du monde</option>
+                                            <option value="11">Reggae, Ragga, Roots</option>
                                     </select>
                                     <label>Genre:</label>
                                 </div>
@@ -84,8 +92,34 @@
                                 <a class="waves-effect waves-light btn btn-acheter" href="#!" onclick="$('#modal_salle').modal('close');">Valider</a>
                             </div>
                         </div>
-
-            <!--fin modal-->
+                        <!--fin modal-->
+                        <!-- Modal Structure -->
+                        <div id="modal_prix" class="modal">
+                            <div class="modal-content center">
+                                <h4>Selectionnez un intervalle de prix: </h4>
+                                 <div class="row">
+                                    <div class="col s12">
+                                      <div class="row">
+                                        <p>Minimum:</p>
+                                        <div class="input-field">
+                                          <input type="text" id="autocomplete-input_salle" class="autocomplete" placeholder="0">
+                                          <label for="autocomplete-input">Prix minimum:</label>
+                                        </div>
+                                        </div>
+                                        <div class="row">
+                                        <p>Maximum:</p>
+                                        <div class="input-field ">
+                                          <input type="text" id="autocomplete-input_salle" class="autocomplete" placeholder="999">
+                                          <label for="autocomplete-input">Prix maximum:</label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </br>
+                                <a class="waves-effect waves-light btn btn-acheter" href="#!" onclick="$('#modal_salle').modal('close');">Valider</a>
+                            </div>
+                        </div>
+                        <!--fin modal-->
 
                  <div class="recherche_principale">
                     <div class="recherche_principale_champs meme-ligne centrer_champs">
@@ -122,7 +156,7 @@
                             </li>
                             <li class="search_item"><a href="#modal_salle" onclick="$(this).css('color', 'black');">Salle</a>
                             </li>
-                            <li class="search_item"><a href="./search_prix.html">Prix</a>
+                             <li class="search_item"><a href="#modal_prix" onclick="$(this).css('color', 'black');">Prix</a>
                             </li>
                             <li class="search_item"><a href="./search_avis.html">Avis</a>
                             </li>
